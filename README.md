@@ -16,10 +16,10 @@ Usage & Installation
 1. Copy the tour/js and tour/css to your server. 
 2. Call the `tour.js` script in your header file `<script src="js/tour.js" type="text/javascript"></script>`.
 3. Initialize the tour inbetween your `<head> ... </head>` 
-> `<script type="text/javascript"> var tour = new Tour();` 
-> `var tour = new Tour()`
+`<script type="text/javascript"> var tour = new Tour();` 
+`var tour = new Tour()`
 4. Add one to multiple steps by repeating the following:
-> `tour.newStep({
+`tour.newStep({
     placement: "element_identifier",
     position: "location",
     title: "title",
@@ -27,13 +27,13 @@ Usage & Installation
     animation: true
 });`
 5. newStep elements are as follows:
-> `placement`: the identifier for your element (ex. `#top_banner` or `.top_banner`)
-> `position`: One of the following  will specify where to place the tool tip relative to your element `n`, `ne`, `e`, `se`, `s`, `sw`, `w`, `nw`
-> `title`: The title of the tour box
-> `content`: The content text of your box, HTML is suppoted
-> `animation`: Not current supported - coming in future version
+`placement`: the identifier for your element (ex. `#top_banner` or `.top_banner`)
+`position`: One of the following  will specify where to place the tool tip relative to your element `n`, `ne`, `e`, `se`, `s`, `sw`, `w`, `nw`
+`title`: The title of the tour box
+`content`: The content text of your box, HTML is suppoted
+`animation`: Not current supported - coming in future version
 6. Start the tour by executing this command when the document is ready (ex).
-> ` $(document).ready(function(){
+` $(document).ready(function(){
         tour.start();
     });`
 7. You can also fire the tour on click by calling tour.start() on item click (ex).
