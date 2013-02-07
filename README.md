@@ -2,7 +2,7 @@ Crimson Tour
 =========
 Author: [drazion]
 
-Crimson Tour is a Javascript Library that allows you to add a web tour tool to your website.  The color scheme is fully customizable.  There are no CSS3 or version dependent components to this tool, therefore it is the backwards compatible tour library I have used.
+Crimson Tour is a Javascript Library that allows you to add a web tour tool to your website.  The color scheme is fully customizable.  There are no CSS3 or version dependent components to this tool, although CSS3 is used to style the boxes, they are not required. Therefore it is the most backwards compatible and lightweight tour library I have encountered thus far.
 > Tested and functional in the following browers:
   - FireFox 
   - Chrome
