@@ -54,7 +54,7 @@ License
 -
 MIT
 
-  [drazion]: aaron.harvey@gmail.com
+  [drazion]: mailto:aaron.harvey@gmail.com
   [1]: http://www.crimson-cardinal.com/crimson-tour
   [jQuery]: http://jquery.com  
   
