@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<head>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/tour-themes/default.css" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/tour.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var tour = new Tour();
+        //Top Banner Step
+        tour.newStep({
+            placement: "#top_banner",
+            position: "s",
+            title: "Top Banner (South)",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis quam augue, vel rutrum tellus. Maecenas vehicula urna nec tortor luctus vel convallis erat commodo.",
+            animation: true
+        });
+        //Box 1 Step
+        tour.newStep({
+            placement: "#box1",
+            position: "w",
+            title: "Box 1 (West)",
+            content: "Maecenas interdum justo in lectus placerat viverra. Aliquam elit urna, tempus lobortis tempus fringilla, aliquet id diam.",
+            animation: true
+        });
+        //Box 2 Step
+        tour.newStep({
+            placement: "#box2",
+            position: "e",
+            title: "Box 2 (East)",
+            content: "unc nec mauris felis, eget rhoncus nibh. Vestibulum non purus et neque volutpat dignissim.",
+            animation: true
+        });
+        //Box 3 Step
+        tour.newStep({
+            placement: "#box3",
+            position: "ne",
+            title: "Box 3 (NorthEast)",
+            content: "Nam ornare quam tortor, nec auctor nibh. Sed vitae orci at est laoreet venenatis. Vivamus vel lacus ut magna eleifend elementum in vitae tellus. ",
+            animation: true
+        });
+        //Box 4 Step
+        tour.newStep({
+            placement: "#box4",
+            position: "w",
+            title: "Box 4 (West)",
+            content: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+            animation: true
+        });
+        //Box 5 Step
+        tour.newStep({
+            placement: "#box5",
+            position: "nw",
+            title: "Box 5 (NorthWest)",
+            content: "Duis egestas enim viverra sem viverra eget consequat tortor dapibus.",
+            animation: true
+        });
+        //Box 6 Step
+        tour.newStep({
+            placement: "#box6",
+            position: "n",
+            title: "Box 6 (North)",
+            content: "Suspendisse sem neque, pulvinar et eleifend quis, hendrerit in neque. ",
+            animation: true
+        });
+        //Box 7 Step
+        tour.newStep({
+            placement: "#box7",
+            position: "se",
+            title: "Box 7 (SouthEast)",
+            content: "Vivamus bibendum lacus in neque congue venenatis. ",
+            animation: true
+        });
+        //Box 8 Step
+        tour.newStep({
+            placement: "#box8",
+            position: "nw",
+            title: "Box 8 (NorthWest)",
+            content: "Proin non urna cursus leo malesuada sollicitudin et sit amet magna. Nam lobortis tincidunt laoreet. ",
+            animation: true
+        });
+        $(document).ready(function(){
+            tour.start();
+        });
+
+    </script>
+</head>
+<div id="mainWrapper">
+    <div id="top_banner">
+        Top banner
+    </div>
+
+    <div id="box_holder">
+        <div id="box1">Box 1</div>
+        <div id="box2">Box 2</div>
+        <div id="box3">Box 3</div>
+        <div id="box4">Box 4</div>
+        <div id="box5">Box 5</div>
+        <div id="box6">Box 6</div>
+        <div id="box7">Box 7</div>
+        <div id="box8">Box 8</div>
+    </div>
+</div>
