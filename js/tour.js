@@ -84,44 +84,44 @@ var Tour = function Tour(settings) {
         //TODO: allow + and - modifiers to be dynamic on step creation
         switch(_this.position) {
             case "s":
+                _this.graphic = 'north-pointer';
                 _this.x_loc = $(_this.placement).offset().left + ($(_this.placement).width() / 2) - (options.dialogwidth / 2);
                 _this.y_loc = $(_this.placement).offset().top + $(_this.placement).height() + 20;
-                _this.graphic = 'north-pointer';
                 break;
             case "se":
+                _this.graphic = 'west-pointer';
                 _this.x_loc = $(_this.placement).offset().left + $(_this.placement).width() + 20;
                 _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height()) - 50;
-                _this.graphic = 'west-pointer';
                 break;
             case "e":
-                _this.x_loc = $(_this.placement).offset().left + $(_this.placement).width() + 20;
-                _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) - 45;
                 _this.graphic = 'west-pointer';
+                _this.x_loc = $(_this.placement).offset().left + $(_this.placement).width() + 26;
+                _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) - 26; //26 is height of pointer
                 break;
             case "ne":
+                _this.graphic = 'west-pointer';
                 _this.x_loc = $(_this.placement).offset().left + $(_this.placement).width() + 20;
                 _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) - 90;
-                _this.graphic = 'west-pointer';
                 break;
             case "n":
+                _this.graphic = 'south-pointer';
                 _this.x_loc = $(_this.placement).offset().left + ($(_this.placement).width() / 2);
                 _this.y_loc = $(_this.placement).offset().top - 110;
-                _this.graphic = 'south-pointer';
                 break;
             case "nw":
+                _this.graphic = 'east-pointer';
                 _this.x_loc = $(_this.placement).offset().left - 205; //TODO: Move this over by the width of tour div
                 _this.y_loc = $(_this.placement).offset().top;
-                _this.graphic = 'east-pointer';
                 break;
             case "w":
-                _this.x_loc = $(_this.placement).offset().left - 205;
-                _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) - 45;
                 _this.graphic = 'east-pointer';
+                _this.x_loc = $(_this.placement).offset().left - (options.dialogwidth);
+                _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) - 26; //26 is height of pointer
                 break;
             case "sw":
+                _this.graphic = 'east-pointer';
                 _this.x_loc = $(_this.placement).offset().left - 205;
                 _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) + 80;
-                _this.graphic = 'east-pointer';
                 break;
         }
         options = $.extend({}, this._settings);
