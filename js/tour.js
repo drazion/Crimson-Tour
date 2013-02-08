@@ -28,7 +28,7 @@ var Tour = function Tour(settings) {
     }
 
     Tour.prototype.end = function() {
-        $("#crimson-tour").hide();
+        $("#crimson-tour").addClass('hidden');
     }
 
     Tour.prototype.showNextStep = function() {
