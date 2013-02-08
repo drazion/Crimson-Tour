@@ -7,6 +7,7 @@ var Tour = function Tour(settings) {
            prev: "&laquo; Back",
            end: "Stop Tour"
        },
+       dialogwidth: 200,
        keyboard: true,
        colorscheme: 'black'
    }, settings);
@@ -27,7 +28,7 @@ var Tour = function Tour(settings) {
     }
 
     Tour.prototype.end = function() {
-        $("#crimson-tour").addClass('hidden');
+        $("#crimson-tour").hide();
     }
 
     Tour.prototype.showNextStep = function() {
@@ -77,48 +78,49 @@ var Tour = function Tour(settings) {
 
     Tour.prototype.showStep = function (step) {
         var _this = step;
+        options = $.extend({}, this._settings);
 
         //TODO: Move this to a function
         //TODO: allow + and - modifiers to be dynamic on step creation
         switch(_this.position) {
             case "s":
-                _this.x_loc = $(_this.placement).position().left + ($(_this.placement).width() / 2) - 90;
-                _this.y_loc = $(_this.placement).position().top + $(_this.placement).height() + 20;
+                _this.x_loc = $(_this.placement).offset().left + ($(_this.placement).width() / 2) - (options.dialogwidth / 2);
+                _this.y_loc = $(_this.placement).offset().top + $(_this.placement).height() + 20;
                 _this.graphic = 'north-pointer';
                 break;
             case "se":
-                _this.x_loc = $(_this.placement).position().left + $(_this.placement).width() + 20;
-                _this.y_loc = $(_this.placement).position().top + ($(_this.placement).height()) - 50;
+                _this.x_loc = $(_this.placement).offset().left + $(_this.placement).width() + 20;
+                _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height()) - 50;
                 _this.graphic = 'west-pointer';
                 break;
             case "e":
-                _this.x_loc = $(_this.placement).position().left + $(_this.placement).width() + 20;
-                _this.y_loc = $(_this.placement).position().top + ($(_this.placement).height() / 2) - 45;
+                _this.x_loc = $(_this.placement).offset().left + $(_this.placement).width() + 20;
+                _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) - 45;
                 _this.graphic = 'west-pointer';
                 break;
             case "ne":
-                _this.x_loc = $(_this.placement).position().left + $(_this.placement).width() + 20;
-                _this.y_loc = $(_this.placement).position().top + ($(_this.placement).height() / 2) - 90;
+                _this.x_loc = $(_this.placement).offset().left + $(_this.placement).width() + 20;
+                _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) - 90;
                 _this.graphic = 'west-pointer';
                 break;
             case "n":
-                _this.x_loc = $(_this.placement).position().left + ($(_this.placement).width() / 2);
-                _this.y_loc = $(_this.placement).position().top - 110;
+                _this.x_loc = $(_this.placement).offset().left + ($(_this.placement).width() / 2);
+                _this.y_loc = $(_this.placement).offset().top - 110;
                 _this.graphic = 'south-pointer';
                 break;
             case "nw":
-                _this.x_loc = $(_this.placement).position().left - 205; //TODO: Move this over by the width of tour div
-                _this.y_loc = $(_this.placement).position().top;
+                _this.x_loc = $(_this.placement).offset().left - 205; //TODO: Move this over by the width of tour div
+                _this.y_loc = $(_this.placement).offset().top;
                 _this.graphic = 'east-pointer';
                 break;
             case "w":
-                _this.x_loc = $(_this.placement).position().left - 205;
-                _this.y_loc = $(_this.placement).position().top + ($(_this.placement).height() / 2) - 45;
+                _this.x_loc = $(_this.placement).offset().left - 205;
+                _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) - 45;
                 _this.graphic = 'east-pointer';
                 break;
             case "sw":
-                _this.x_loc = $(_this.placement).position().left - 205;
-                _this.y_loc = $(_this.placement).position().top + ($(_this.placement).height() / 2) + 80;
+                _this.x_loc = $(_this.placement).offset().left - 205;
+                _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) + 80;
                 _this.graphic = 'east-pointer';
                 break;
         }
