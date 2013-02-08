@@ -8,26 +8,26 @@
 
 /* RED POINTERS */
 .crimson-dialog .red-north-pointer { position: absolute; top:-16px; left: 45%; background: url('images/tour_pointers.png') no-repeat -2px -1px; width: 26px; height: 16px;}
-.crimson-dialog .red-east-pointer { background: url('images/tour_pointers.png') no-repeat -2px -18px; width: 26px; height: 26px;}
-.crimson-dialog .red-south-pointer { background: url('images/tour_pointers.png') no-repeat -2px -45px; width: 26px; height: 16px;}
-.crimson-dialog .red-west-pointer { background: url('images/tour_pointers.png') no-repeat -12px -62px; width: 26px; height: 26px;}
+.crimson-dialog .red-east-pointer { position: absolute; top: 10px; right: -27px; background: url('images/tour_pointers.png') no-repeat -2px -18px; width: 26px; height: 26px;}
+.crimson-dialog .red-south-pointer { position: absolute; bottom: -17px; left: 10px; background: url('images/tour_pointers.png') no-repeat -2px -45px; width: 26px; height: 16px;}
+.crimson-dialog .red-west-pointer { position: absolute; left: -26px; top: 10px; background: url('images/tour_pointers.png') no-repeat -12px -62px; width: 26px; height: 26px;}
 /* WHITE POINTERS */
-.crimson-dialog .white-north-pointer { position: relative; top:-16px; left: 45%; background: url('images/tour_pointers.png') no-repeat -29px -1px; width: 26px; height: 16px;}
-.crimson-dialog .white-east-pointer { background: url('images/tour_pointers.png') no-repeat -29px -18px; width: 26px; height: 26px;}
-.crimson-dialog .white-south-pointer { background: url('images/tour_pointers.png') no-repeat -29px -45px; width: 26px; height: 16px;}
-.crimson-dialog .white-west-pointer { background: url('images/tour_pointers.png') no-repeat -39px -62px; width: 26px; height: 26px;}
+.crimson-dialog .white-north-pointer { position: absolute; top:-16px; left: 45%; background: url('images/tour_pointers.png') no-repeat -29px -1px; width: 26px; height: 16px;}
+.crimson-dialog .white-east-pointer { position: absolute; top: 10px; right: -27px; background: url('images/tour_pointers.png') no-repeat -29px -18px; width: 26px; height: 26px;}
+.crimson-dialog .white-south-pointer { position: absolute; bottom: -17px; left: 10px; background: url('images/tour_pointers.png') no-repeat -29px -45px; width: 26px; height: 16px;}
+.crimson-dialog .white-west-pointer { position: absolute; left: -26px; top: 10px; background: url('images/tour_pointers.png') no-repeat -39px -62px; width: 26px; height: 26px;}
 /* BLACK POINTERS */
 .crimson-dialog .black-north-pointer { position: absolute; top:-16px; left: 45%; background: url('images/tour_pointers.png') no-repeat -56px -1px; width: 26px; height: 16px;}
 .crimson-dialog .black-east-pointer { position: absolute; top: 10px; right: -27px; background: url('images/tour_pointers.png') no-repeat -56px -18px; width: 26px; height: 26px;}
 .crimson-dialog .black-south-pointer { position: absolute; bottom: -17px; left: 10px; background: url('images/tour_pointers.png') no-repeat -56px -45px; width: 26px; height: 16px;}
 .crimson-dialog .black-west-pointer { position: absolute; left: -26px; top: 10px; background: url('images/tour_pointers.png') no-repeat -56px -62px; width: 26px; height: 26px;}
 /* BLUE POINTERS */
-.crimson-dialog .blue-north-pointer { position: relative; top:-16px; left: 45%; background: url('images/tour_pointers.png') no-repeat -83px -1px; width: 26px; height: 16px;}
-.crimson-dialog .blue-east-pointer { background: url('images/tour_pointers.png') no-repeat -83px -18px; width: 26px; height: 26px;}
-.crimson-dialog .blue-south-pointer { background: url('images/tour_pointers.png') no-repeat -83px -45px; width: 26px; height: 16px;}
-.crimson-dialog .blue-west-pointer { background: url('images/tour_pointers.png') no-repeat -83px -62px; width: 26px; height: 26px;}
+.crimson-dialog .blue-north-pointer { position: absolute; top:-16px; left: 45%; background: url('images/tour_pointers.png') no-repeat -83px -1px; width: 26px; height: 16px;}
+.crimson-dialog .blue-east-pointer { position: absolute; top: 10px; right: -27px; background: url('images/tour_pointers.png') no-repeat -83px -18px; width: 26px; height: 26px;}
+.crimson-dialog .blue-south-pointer { position: absolute; bottom: -17px; left: 10px; background: url('images/tour_pointers.png') no-repeat -83px -45px; width: 26px; height: 16px;}
+.crimson-dialog .blue-west-pointer { position: absolute; left: -26px; top: 10px; background: url('images/tour_pointers.png') no-repeat -83px -62px; width: 26px; height: 26px;}
 /* GREEN POINTERS */
-.crimson-dialog .green-north-pointer { position: relative; top:-16px; left: 45%; background: url('images/tour_pointers.png') no-repeat -110px -1px; width: 26px; height: 16px;}
-.crimson-dialog .green-east-pointer { background: url('images/tour_pointers.png') no-repeat -110px -18px; width: 26px; height: 26px;}
-.crimson-dialog .green-south-pointer { background: url('images/tour_pointers.png') no-repeat -110px -45px; width: 26px; height: 16px;}
-.crimson-dialog .green-west-pointer { background: url('images/tour_pointers.png') no-repeat -110px -62px; width: 26px; height: 26px;}
+.crimson-dialog .green-north-pointer { position: absolute; top:-16px; left: 45%; background: url('images/tour_pointers.png') no-repeat -110px -1px; width: 26px; height: 16px;}
+.crimson-dialog .green-east-pointer { position: absolute; top: 10px; right: -27px; background: url('images/tour_pointers.png') no-repeat -110px -18px; width: 26px; height: 26px;}
+.crimson-dialog .green-south-pointer { position: absolute; bottom: -17px; left: 10px; background: url('images/tour_pointers.png') no-repeat -110px -45px; width: 26px; height: 16px;}
+.crimson-dialog .green-west-pointer { position: absolute; left: -26px; top: 10px; background: url('images/tour_pointers.png') no-repeat -110px -62px; width: 26px; height: 26px;}
