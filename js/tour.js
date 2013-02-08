@@ -73,7 +73,7 @@ var Tour = function Tour(settings) {
         });
         //Start at beginning of tour if none of the above satisified
         //TODO: set and pull values from a cookie
-        return _this.showStep(_this._steps[0]);
+        return _this.showStep(_this._steps[_this._currentStep]);
     }
 
     Tour.prototype.showStep = function (step) {
