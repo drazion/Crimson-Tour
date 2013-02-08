@@ -1,1 +1,8 @@
 .crimson-dialog div {margin-left: -10px;}
+.crimson-content { padding-top: 25px;}
+
+.crimson-dialog .black-west-pointer { position: absolute; left: -16px; top: 10px; background: url('images/tour_pointers.png') no-repeat -56px -62px; width: 26px; height: 26px;}
+.crimson-dialog .white-west-pointer { position: absolute; left: -16px; top: 10px; background: url('images/tour_pointers.png') no-repeat -39px -62px; width: 26px; height: 26px;}
+.crimson-dialog .black-west-pointer { position: absolute; left: -26px; top: 10px; background: url('images/tour_pointers.png') no-repeat -56px -62px; width: 26px; height: 26px;}
+.crimson-dialog .blue-west-pointer {  position: absolute; left: -26px; top: 10px; background: url('images/tour_pointers.png') no-repeat -83px -62px; width: 26px; height: 26px;}
+.crimson-dialog .green-west-pointer { position: absolute; left: -26px; top: 10px; background: url('images/tour_pointers.png') no-repeat -110px -62px; width: 26px; height: 26px;}
