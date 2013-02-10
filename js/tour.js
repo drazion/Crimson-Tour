@@ -139,6 +139,19 @@ var Tour = function Tour(settings) {
         }
         html += '<div id="crimson-end"> ' + options.labels.end + '</div>';
             '</div>';
+        //Prevent out of bounds
+        //TODO: Move to function
+        if(_this.y_loc < 0) {
+            _this.y_loc = 0;
+            var hide_pointer = true;
+        }
+        if(_this.x_loc < 0) {
+            _this.x_loc = 0;
+            var hide_pointer = true;
+        }
         $("#crimson-tour").removeClass('hidden').addClass('crimson-dialog').html(html).css('position', 'absolute').css('top', _this.y_loc).css('left', _this.x_loc);
+        if(hide_pointer) {
+            $('.'+ options.colorscheme + '-' +  _this.graphic).hide();
+        }
     }
 }
