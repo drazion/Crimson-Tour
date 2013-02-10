@@ -44,7 +44,9 @@ var Tour = function Tour(settings) {
         var _this = this;
         //Create the tour box if it doesn't exist
         if(!$("#crimson-tour").length) { $('body').append('<div id="crimson-tour" class="hidden"></div>');}
-
+        $(window).resize(function() {
+            return _this.moveBox(_this._steps[_this._currentStep]);
+        });
         $(document).on('click', '.crimson-tour', function(e) {
             e.preventDefault;
             return _this.showStep(_this._steps[0]);
@@ -76,11 +78,7 @@ var Tour = function Tour(settings) {
         return _this.showStep(_this._steps[_this._currentStep]);
     }
 
-    Tour.prototype.showStep = function (step) {
-        var _this = step;
-        options = $.extend({}, this._settings);
-
-        //TODO: Move this to a function
+    Tour.prototype.moveBox = function(_this) {
         //TODO: allow + and - modifiers to be dynamic on step creation
         switch(_this.position) {
             case "s":
@@ -124,6 +122,13 @@ var Tour = function Tour(settings) {
                 _this.y_loc = $(_this.placement).offset().top + ($(_this.placement).height() / 2) + 80;
                 break;
         }
+        return _this;
+    }
+    Tour.prototype.showStep = function (step) {
+        var _this = step;
+        options = $.extend({}, this._settings);
+        this.moveBox(_this);
+
         options = $.extend({}, this._settings);
         //Build The Dialog Box
         //TODO: make location of pointer graphics dynamic based on width of tour dialog
@@ -139,6 +144,19 @@ var Tour = function Tour(settings) {
         }
         html += '<div id="crimson-end"> ' + options.labels.end + '</div>';
             '</div>';
+        //Prevent out of bounds
+        //TODO: Move to function
+        if(_this.y_loc < 0) {
+            _this.y_loc = 0;
+            var hide_pointer = true;
+        }
+        if(_this.x_loc < 0) {
+            _this.x_loc = 0;
+            var hide_pointer = true;
+        }
         $("#crimson-tour").removeClass('hidden').addClass('crimson-dialog').html(html).css('position', 'absolute').css('top', _this.y_loc).css('left', _this.x_loc);
+        if(hide_pointer) {
+            $('.'+ options.colorscheme + '-' +  _this.graphic).hide();
+        }
     }
 }
