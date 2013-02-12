@@ -146,7 +146,6 @@ var Tour = function Tour(settings) {
         html += '<div id="crimson-end"> ' + options.labels.end + '</div>';
             '</div>';
         //Prevent out of bounds
-        //TODO: Move to function
         if(_this.y_loc < 0) {
             _this.y_loc = 0;
             var hide_pointer = true;
