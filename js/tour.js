@@ -45,7 +45,7 @@ var Tour = function Tour(settings) {
         //Create the tour box if it doesn't exist
         if(!$("#crimson-tour").length) { $('body').append('<div id="crimson-tour" class="hidden"></div>');}
         $(window).resize(function() {
-            return _this.moveBox(_this._steps[_this._currentStep]);
+            return _this.showStep(_this.moveBox(_this._steps[_this._currentStep]));
         });
         $(document).on('click', '.crimson-tour', function(e) {
             e.preventDefault;
@@ -124,6 +124,7 @@ var Tour = function Tour(settings) {
         }
         return _this;
     }
+    
     Tour.prototype.showStep = function (step) {
         var _this = step;
         options = $.extend({}, this._settings);
