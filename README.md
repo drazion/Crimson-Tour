@@ -18,7 +18,7 @@ Check [Wiki]
 Version
 ----
 
-Alpha 1.1
+Stable v1.0
 
 Tech
 -----------
